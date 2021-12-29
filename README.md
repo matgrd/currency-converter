@@ -21,6 +21,6 @@ A simple calculator allows you to convert selected currencies.
 
 ![amount](https://raw.githubusercontent.com/matgrd/currency-converter/main/images/amount.gif)
 
-2. Please select the currency you are interested in.
+2. Please select the currency you are interested in and click the "Przelicz" button.
 
 ![selected-currency](https://raw.githubusercontent.com/matgrd/currency-converter/main/images/selected-%20currency.gif)
