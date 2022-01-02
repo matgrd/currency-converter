@@ -9,6 +9,10 @@ html {
 .body {
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-image: url("../images/money.jpg");
     background-size: cover;
     background-repeat: no-repeat;

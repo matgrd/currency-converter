@@ -25,58 +25,56 @@
   </head>
 
   <body class="body">
-    <main>
-      <div class="container">
-        <h1 class="container__header">Kantor internetowy</h1>
-        <form class="form js-form">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Przelicz walutę</legend>
-            <p class="form__paragraph">
-              <label>
-                <span class="form_labelText">Kwota:*</span>
-                <input
-                  class="form__input js-amount"
-                  placeholder="Podaj kwotę w zł"
-                  required
-                  autofocus
-                  type="number"
-                  step="1"
-                  min="1"
-                />
-              </label>
-            </p>
-            <p class="form__paragraph">
-              <label>
-                <span class="form_labelText">Przelicz z:</span>
-                <select name="currency" class="form__select js-firstCurrency">
-                  <option selected value="PLN">Złoty</option>
-                  <option value="EUR">Euro</option>
-                  <option value="CHF">Frank szwajcarski</option>
-                  <option value="USD">Dolar amerykański</option>
-                  <option value="GBP">Brytyjski funt szterling</option>
-                </select>
-              </label>
-            </p>
-            <p class="form__paragraph">
-              <label>
-                <span class="form_labelText">Przelicz na:</span>
-                <select name="currency" class="form__select js-secondCurrency">
-                  <option value="PLN">Złoty</option>
-                  <option selected value="EUR">Euro</option>
-                  <option value="CHF">Frank szwajcarski</option>
-                  <option value="USD">Dolar amerykański</option>
-                  <option value="GBP">Brytyjski funt szterling</option>
-                </select>
-              </label>
-            </p>
-            <p class="form__paragraph form__paragraph--modified">
-              Po przewalutowaniu otrzymasz:
-              <span class="form__result js-result">N/A</span>
-            </p>
-          </fieldset>
-          <button class="form__button">Przelicz</button>
-        </form>
-      </div>
-    </main>
+    <div class="container">
+      <h1 class="form__header">Kantor internetowy</h1>
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Przelicz walutę</legend>
+          <p class="form__paragraph">
+            <label>
+              <span class="form_labelText">Kwota:*</span>
+              <input
+                class="form__input js-amount"
+                placeholder="Podaj kwotę w zł"
+                required
+                autofocus
+                type="number"
+                step="1"
+                min="1"
+              />
+            </label>
+          </p>
+          <p class="form__paragraph">
+            <label>
+              <span class="form_labelText">Przelicz z:</span>
+              <select name="currency" class="form__select js-firstCurrency">
+                <option selected value="PLN">Złoty</option>
+                <option value="EUR">Euro</option>
+                <option value="CHF">Frank szwajcarski</option>
+                <option value="USD">Dolar amerykański</option>
+                <option value="GBP">Brytyjski funt szterling</option>
+              </select>
+            </label>
+          </p>
+          <p class="form__paragraph">
+            <label>
+              <span class="form_labelText">Przelicz na:</span>
+              <select name="currency" class="form__select js-secondCurrency">
+                <option value="PLN">Złoty</option>
+                <option selected value="EUR">Euro</option>
+                <option value="CHF">Frank szwajcarski</option>
+                <option value="USD">Dolar amerykański</option>
+                <option value="GBP">Brytyjski funt szterling</option>
+              </select>
+            </label>
+          </p>
+          <p class="form__paragraph form__paragraph--modified">
+            Po przewalutowaniu otrzymasz:
+            <span class="form__result js-result">N/A</span>
+          </p>
+        </fieldset>
+        <button class="form__button">Przelicz</button>
+      </form>
+    </div>
   </body>
 </html>
