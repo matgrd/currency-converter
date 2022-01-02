@@ -5,7 +5,7 @@
   const exchangeUSD = 4.07;
   const exchangeGBP = 5.47;
 
-  const currencyResult = (firstCurrency) => {
+  const calculateResult = (firstCurrency) => {
     const amountElement = document.querySelector(".js-amount");
     const amount = +amountElement.value;
 
@@ -27,8 +27,8 @@
     }
   };
 
-  const currencyFinishResult = (firstCurrency, secondCurrency) => {
-    const result = currencyResult(firstCurrency);
+  const calculateFinishResult = (firstCurrency, secondCurrency) => {
+    const result = calculateResult(firstCurrency);
 
     switch (secondCurrency) {
       case "PLN":
@@ -63,7 +63,7 @@
     const firstCurrency = firstCurrencyElement.value;
     const secondCurrency = secondCurrencyElement.value;
 
-    const result = currencyFinishResult(firstCurrency, secondCurrency);
+    const result = calculateFinishResult(firstCurrency, secondCurrency);
 
     updateResultText(result, secondCurrency);
   };
