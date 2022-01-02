@@ -19,8 +19,8 @@ A simple calculator allows you to convert selected currencies.
 
 1. Please write your amount.
 
-![amount](https://raw.githubusercontent.com/matgrd/currency-converter/main/images/amount.gif)
+![amount](https://raw.githubusercontent.com/matgrd/currency-converter/main/images/amount-v01.gif)
 
 2. Please select the currency you are interested in and click the "Przelicz" button.
 
-![selected-currency](https://raw.githubusercontent.com/matgrd/currency-converter/main/images/selected-currency-v01.gif)
+![selected-currency](https://raw.githubusercontent.com/matgrd/currency-converter/main/images/selected-currency-v02.gif)
