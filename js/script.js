@@ -48,10 +48,18 @@
     }
   };
 
-  const updateResultText = (result, secondCurrency) => {
+  const updateResultText = (
+    firstCurrencyElement,
+    secondCurrencyElement,
+    result,
+    secondCurrency
+  ) => {
     const resultElement = document.querySelector(".js-result");
 
-    resultElement.innerText = `${result.toFixed(2)} ${secondCurrency}`;
+    if (firstCurrencyElement.value === secondCurrencyElement.value) {
+      return (resultElement.innerText = `\nJesteś pewny, że chcesz to zrobić?`);
+    }
+    return (resultElement.innerText = `${result.toFixed(2)} ${secondCurrency}`);
   };
 
   const onFormSubmit = (event) => {
@@ -65,7 +73,12 @@
 
     const result = calculateFinishResult(firstCurrency, secondCurrency);
 
-    updateResultText(result, secondCurrency);
+    updateResultText(
+      firstCurrencyElement,
+      secondCurrencyElement,
+      result,
+      secondCurrency
+    );
   };
 
   const init = () => {
