@@ -57,7 +57,7 @@
     const resultElement = document.querySelector(".js-result");
 
     if (firstCurrencyElement.value === secondCurrencyElement.value) {
-      return (resultElement.innerText = `\nJesteś pewny, że chcesz to zrobić?`);
+      return (resultElement.innerText = `\nProszę, wybierz inne waluty 😅`);
     }
     return (resultElement.innerText = `${result.toFixed(2)} ${secondCurrency}`);
   };
